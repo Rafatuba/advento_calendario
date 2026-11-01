@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+@import "tailwindcss";
+@import "@heroui/styles";
+
+/* Identidade visual */
+:root {
+  color-scheme: light;
+
+  --background: #f8f4e6;
+  --foreground: #1f2937;
+
+  --heading: #c1121f;
+  --text: #1b5e3a;
+  --secondary: #d4af37;
+  --neutral: #1f2937;
+
+  /* Tipografia */
+  --font-primary: "Roboto Flex", Arial, sans-serif;
+
+  /* HeroUI */
+  --accent: var(--heading);
+  --accent-foreground: var(--background);
+
+  --success: var(--text);
+  --success-foreground: var(--background);
+}
+
+/* Tailwind CSS */
+@theme inline {
+  --font-sans: var(--font-primary);
+
+  --color-heading: var(--heading);
+  --color-text: var(--text);
+  --color-secondary: var(--secondary);
+  --color-neutral: var(--neutral);
+}
+
+/* Estilos globais */
+@layer base {
+  html {
+    font-family: var(--font-primary);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-heading;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-heading;
+  }
+
+  p {
+    @apply text-lg text-text;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font-family: inherit;
+  }
+}
