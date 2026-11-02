@@ -7,7 +7,7 @@ export default function Home() {
   const navigate = useNavigate();
   return (
     <main
-      className="w-full h-screen bg-cover bg-center flex items-end justify-center"
+      className="w-full h-screen bg-center bg-cover flex items-end justify-center"
       style={{ backgroundImage: `url(${homeImage})` }}
     >
       <Button
