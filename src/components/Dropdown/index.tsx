@@ -9,6 +9,7 @@ export function DropdownMenu() {
   return (
     <Dropdown className="text-success">
       <Button
+        isIconOnly
         aria-label="Menu"
         className="fixed top-4 left-4 z-50 bg-success text-secondary hover:bg-secondary/80"
       >
@@ -17,7 +18,7 @@ export function DropdownMenu() {
 
       <Dropdown.Popover className="bg-success">
         <Dropdown.Menu onAction={(key) => navigate(`/advento/${key}`)}>
-          <Header className="text-secondary">Todos os dias</Header>
+          <Header className="text-secondary underline">Todos os dias</Header>
           {adventos.map((advento) => (
             <Dropdown.Item
               key={advento.id}

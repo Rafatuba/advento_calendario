@@ -10,15 +10,15 @@ interface AdventoConteudoProps {
 
 export function AdventoConteudo({ advento }: AdventoConteudoProps) {
   return (
-    <main>
+    <main className="relative">
       <DropdownMenu />
       <img
         src={imgexemplo}
         alt="Imagem de Natal"
-        className="w-full h-auto object-cover mask-[linear-gradient(to_bottom,black_60%,transparent_100%)]"
+        className="fixed top-0 w-full h-auto object-cover mask-[linear-gradient(to_bottom,black_60%,transparent_100%)]"
       />
 
-      <h1 className="text-end mr-8 -mt-16 text-5xl text-secondary">
+      <h1 className="text-end mr-8 mt-84 text-5xl text-secondary">
         {advento.id}
         <br />
         DEZ
@@ -30,7 +30,7 @@ export function AdventoConteudo({ advento }: AdventoConteudoProps) {
 
           <div className="flex flex-col">
             <p>“{advento.versiculo}”</p>
-            <p className="text-end">{advento.referencia}</p>
+            <p className="text-end italic">{advento.referencia}</p>
           </div>
 
           <Separator className="my-4 bg-secondary" />

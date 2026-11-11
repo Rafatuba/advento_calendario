@@ -16,17 +16,14 @@ export default function Advento() {
   if (!advento) {
     return (
       <main>
-        {" "}
         <img
           src={imgexemplo}
           alt="Imagem de exemplo"
-          className="w-full h-auto
-    object-cover
-    mask-[linear-gradient(to_bottom,black_60%,transparent_100%)]"
+          className="w-full h-auto object-cover mask-[linear-gradient(to_bottom,black_60%,transparent_100%)]"
         />
         <Container>
-          <h1 className="my-8 text-center">
-            Nossa jornada de esperança começa dia 1º de dezembro! <br />{" "}
+          <h1 className="mt-12 text-center text-success">
+            Nossa jornada de esperança começa dia 1º de dezembro! <br />
             Aguarde!
           </h1>
         </Container>
